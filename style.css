@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "plain Light";
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+/* //0b0b0b */
+#main {
+  position: relative;
+  background-color: #030303;
+}
+
+#page1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #151415;
+  background-color: green;
+}
+
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  background-color: #000000;
+  padding: 25vh 10vw;
+}
+
+.line {
+  /* background-color: red; */
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3vw;
+}
+
+.line h1 {
+  font-size: 6.5vw;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.line h2 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-weight: 900;
+
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  opacity: 0;
+}
+@keyframes anime {
+  0% {
+    font-family: "Plain Light";
+    -webkit-text-stroke: 1px solid white;
+    color: white;
+    font-weight: 500;
+    opacity: 1;
+  }
+  47% {
+    font-family: "Plain Light";
+    -webkit-text-stroke: 1px solid white;
+    color: white;
+    font-weight: 500;
+    opacity: 0;
+  }
+  50% {
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px solid white;
+    color: transparent;
+    opacity: 1;
+  }
+  100% {
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px solid white;
+    color: transparent;
+    opacity: 0;
+  }
+}
+.line1-part1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5vw;
+}
+.line1-part1 h5 {
+  text-align: left;
+  max-width: 4vw;
+  min-width: 4vw;
+}
+.line1-part1 h5,
+.line1-part1 h6 {
+  font-size: 3vw;
+
+  font-family: "Silk Serif";
+}
